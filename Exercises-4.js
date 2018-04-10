@@ -17,7 +17,7 @@ function dataHandling2(input){
   console.log(input);
 
 var tanggal = input[3];
-splitTanggal = tanggal.split("");
+splitTanggal = tanggal.split("/");
 sliceTanggal = splitTanggal[1];
 intTanggal = parseInt(sliceTanggal);
 
@@ -42,10 +42,14 @@ return b - a;
 });
 
 console.log(splitTanggal)
-console.log(tanggal)
+
+  
+ubahTanggal = tanggal.split('/').join('-');
+  console.log(ubahTanggal); 
 
 input.splice(1,2);
 input.splice(1,0, 'Roman Alamsyah');
 console.log(input[1]);
 
+return '/'
 }
